@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		 img{
+			width: 900px;
+
+		}
+	</style>
+</head>
+	<body>
+	<div class="header">
+    <h1>欢迎来到咖妹的个人主页</h1>
+    <ul>
+        <li><a href="http://weibo.com/wenshendaka">首页</a></li>
+        <li><a href="http://weibo.com/huabixiaoyao" class="live">纹身生活</a></li>
+        <li><a href="http://www.weibo.com/valll?from=myfollow_all">纹身器材</a></li>
+        <li><a href="http://www.weibo.com/xzc1999?from=myfollow_all&is_all=1">纹身故事</a></li>
+        <li><a href="http://www.weibo.com/clocktattoo?from=myfollow_all">友情链接</a></li>
+    </ul>
+  </div>
+	<div id="slider">
+	  <a href="#"><img src="images/a.jpg"/></a>
+	  <a href="#"><img src="images/b.jpg"/></a>
+	  <a href="#"><img src="images/c.jpg"/></a>
+	  <a href="#"><img src="images/d.jpg"/></a>
+	  <a href="#"><img src="images/e.jpg"/></a>
+	</div>
+	<div class="main-1">
+    <h1>大家好，我是花臂小妖</h1>
+    <p>我是一名编辑,工作于纹身大咖</p>
+    <p>我还是一名纹身师</p>
+    <h2>请关注纹身大咖</h2>
+  </div>
+  <div class="footer">
+    <p class="p1">关于纹身</p>
+    <p class="p2">hopeelephant.github.io/kamei ©2016</p>
+  </div>
+	<script src="js/jquery-3.0.0.js"></script>
+	<script src="js/vmc.slider.full.min.js"></script>
+	<script>
+		var options = {
+		  width: 900, // 宽度
+		  height: 550, // 高度
+		  gridCol: 10, // 网格列数
+		  gridRow: 5, // 网格行数
+		  gridVertical: 20, // 栅格列数
+		  gridHorizontal: 10, // 栅格行数
+		  autoPlay: true, // 自动播放
+		  ascending: true, // 图片按照升序播放
+		  effects: [ // 使用的转场动画效果
+		    'fade', 'fadeLeft', 'fadeRight', 'fadeTop', 'fadeBottom', 'fadeTopLeft', 'fadeBottomRight',
+		    'blindsLeft', 'blindsRight', 'blindsTop', 'blindsBottom', 'blindsTopLeft', 'blindsBottomRight',
+		    'curtainLeft', 'curtainRight', 'interlaceLeft', 'interlaceRight', 'mosaic', 'bomb', 'fumes'
+		  ],
+		  ie6Tidy: false, // IE6下精简效果
+		  random: false, // 随机使用转场动画效果
+		  duration: 1000, // 图片停留时长（毫秒）
+		  speed: 900 // 转场效果时长（毫秒）
+		};
+		/* 创建轮播效果 */
+		$('#slider').vmcSlider(options);
+	</script>
+</body>
+</html>
